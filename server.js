@@ -31,7 +31,7 @@ server.get("/weather",async (req, res) => {
     //     }       
     // })
             // console.log(weatherArray);
-    res.send(weatherArray);
+    res.status(200).send(weatherArray);
 });
 
 
@@ -50,7 +50,7 @@ server.get("/movies", async(req,res)=>{
     moviesArray=moviesData.data.results.map(item=>{
         return new MoviesCreator(item)
     })
-    res.send(moviesArray);
+    res.status(200).send(moviesArray);
 
 })
 
