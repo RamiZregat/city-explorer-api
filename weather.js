@@ -1,4 +1,5 @@
 
+const { default: axios } = require("axios");
 let weatherFunction= async function(req, res){
     const lon = req.query.lon;
     const lat = req.query.lat;

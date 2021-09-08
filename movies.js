@@ -1,3 +1,4 @@
+const { default: axios } = require("axios");
 let moviesFunction= async function(req,res){
     const movieName = req.query.moviename;
     const Key = process.env.MOVIE_API_KEY;
