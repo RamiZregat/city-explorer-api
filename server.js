@@ -6,7 +6,6 @@ const server = express();
 const PORT = process.env.PORT;
 const weatherdata = require("./Data/weather.json");
 const cors = require("cors");
-const { default: axios } = require("axios");
 server.use(cors());
 const Weather=require('./weather.js')
 const Movie=require('./movies')
@@ -20,3 +19,7 @@ server.get("/weather",Weather);
 
 // http://localhost:3010/movies?moviename=q
 server.get("/movies",Movie)
+
+
+
+
