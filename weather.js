@@ -24,7 +24,4 @@ let weatherFunction= async function(req, res){
     this.date=day.valid_date
     this.description=`Low of ${day.low_temp}, high of ${day.high_temp} with ${day.weather.description}`
 }
-
-
-
 module.exports=weatherFunction;
