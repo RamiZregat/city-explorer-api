@@ -1,5 +1,5 @@
 const { default: axios } = require("axios");
-let myMomery={};
+let myMemory={};
 let moviesFunction= async function(req,res){
     const movieName = req.query.moviename;
     if(myMemory[movieName] !== undefined){
